@@ -1,0 +1,19 @@
+spring:
+#  profiles:
+#    active: db # 이 부분은 필요 없습니다. 삭제해 주세요
+
+  ai:
+    openai:
+      api-key: # 키를 입력해 주세요
+      # 셋팅 설정
+      chat:
+        options:
+          model: gpt-4o
+          temperature: 0.7
+          response-format: json_object
+      image:
+        options:
+          model: dall-e-3
+          n: 1
+          size: 1024x1024
+          quality: standard # standard
